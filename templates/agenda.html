@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title>
+</head>
+    <a href="/logout">logout</a>
+<body>
+    <h2>Agendamentos</h2>
+    <a href="{% url 'new_evento' %}">Novo Evento</a>
+    <ul>
+        {% for i in evento %}
+            <li>{{ i.titulo }} - {{ i.get_data_evento }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

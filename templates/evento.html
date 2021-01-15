@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="submit" method="post"> {% csrf_token %}
+        <label for="">Título</label>
+        <input type="text" name="titulo" id=""><br>
+        <hr>
+        <label for="">Data do Evento</label>
+        <input type="datetime-local" name="data_evento" id=""><br>
+        <hr>
+        <label for="">Descrição</label>
+        <textarea name="descricao" id="" cols="30" rows="10"></textarea><br><hr>
+        <input type="submit" value="Salvar">
+        <button type="reset">Cancelar</button>
+        <a href="/">
+            <button type="button">Voltar</button></a>
+    </form>
+</body>
+</html>
